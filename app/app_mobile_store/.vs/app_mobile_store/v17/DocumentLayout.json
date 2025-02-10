@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\record_personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|solutionrelative:app_mobile_store\\record_personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\record_personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|solutionrelative:app_mobile_store\\record_personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|c:\\users\\asus\\desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\validity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|solutionrelative:app_mobile_store\\validity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\main_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|solutionrelative:app_mobile_store\\main_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\main_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2B6F355-A945-4F2A-B668-2B8EFFCC17DA}|app_mobile_store\\app_mobile_store.csproj|solutionrelative:app_mobile_store\\main_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Validity.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\Validity.cs",
+              "RelativeDocumentMoniker": "app_mobile_store\\Validity.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\Validity.cs",
+              "RelativeToolTip": "app_mobile_store\\Validity.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T18:29:31.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "record_personnel.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\record_personnel.cs",
+              "RelativeDocumentMoniker": "app_mobile_store\\record_personnel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\record_personnel.cs",
+              "RelativeToolTip": "app_mobile_store\\record_personnel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:09:56.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "record_personnel.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\record_personnel.cs",
+              "RelativeDocumentMoniker": "app_mobile_store\\record_personnel.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\record_personnel.cs [Design]",
+              "RelativeToolTip": "app_mobile_store\\record_personnel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:03:16.19Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main_management.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\main_management.cs",
+              "RelativeDocumentMoniker": "app_mobile_store\\main_management.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\main_management.cs [Design]",
+              "RelativeToolTip": "app_mobile_store\\main_management.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T15:04:03.014Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main_management.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\main_management.cs",
+              "RelativeDocumentMoniker": "app_mobile_store\\main_management.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\mobile-store\\app\\app_mobile_store\\app_mobile_store\\main_management.cs",
+              "RelativeToolTip": "app_mobile_store\\main_management.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAQwI8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T15:24:52.718Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
