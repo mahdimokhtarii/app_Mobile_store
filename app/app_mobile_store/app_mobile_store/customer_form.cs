@@ -18,6 +18,7 @@ namespace app_mobile_store
         SqlConnection cnn;
         string connection;
         string old_mobile;
+        bool isValid;
        
         public customer_form()
         {
@@ -55,11 +56,19 @@ namespace app_mobile_store
             {
                 if (txt_f_name.Text != "" && txt_l_name.Text != string.Empty && txt_mobile.Text != string.Empty)
                 {
-                    string query = "insert into tbl_Customer Values(N'" + txt_mobile.Text + "',N'" + txt_f_name.Text + "',N'" + txt_l_name.Text + "',N'" + txt_address.Text + "')";
-                    SqlCommand cmd = new SqlCommand(query, cnn);
-                    cmd.ExecuteNonQuery();
-                    grid_update();
-                    cmd.Dispose();
+                    if (isValid)
+                    {
+                        string query = "insert into tbl_Customer Values(N'" + txt_mobile.Text + "',N'" + txt_f_name.Text + "',N'" + txt_l_name.Text + "',N'" + txt_address.Text + "')";
+                        SqlCommand cmd = new SqlCommand(query, cnn);
+                        cmd.ExecuteNonQuery();
+                        grid_update();
+                        cmd.Dispose();
+                        txt_mobile.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        MessageBox.Show("شماره نامعتبر است");
+                    }
                 } 
                 else
                 {
@@ -105,6 +114,7 @@ namespace app_mobile_store
                 txt_f_name.Text = string.Empty;
                 txt_l_name.Text = string.Empty;
                 txt_address.Text = string.Empty;
+                txt_mobile.BackColor = Color.White;
             }
             catch (Exception ex)
             {
@@ -119,11 +129,19 @@ namespace app_mobile_store
             {
                 if (txt_mobile.Text != string.Empty)
                 {
-                    string query = "update tbl_Customer set Customer_id=N'" + txt_mobile.Text + "',Customer_first_name=N'" + txt_f_name.Text + "',Customer_last_name=N'" + txt_l_name.Text + "',Customer_address=N'" + txt_address.Text + "' where Customer_id=N'" + old_mobile + "'";
-                    SqlCommand cmd = new SqlCommand(query, cnn);
-                    cmd.ExecuteNonQuery();
-                    grid_update();
-                    cmd.Dispose();
+                    if (isValid)
+                    {
+                        string query = "update tbl_Customer set Customer_id=N'" + txt_mobile.Text + "',Customer_first_name=N'" + txt_f_name.Text + "',Customer_last_name=N'" + txt_l_name.Text + "',Customer_address=N'" + txt_address.Text + "' where Customer_id=N'" + old_mobile + "'";
+                        SqlCommand cmd = new SqlCommand(query, cnn);
+                        cmd.ExecuteNonQuery();
+                        grid_update();
+                        cmd.Dispose();
+                        txt_mobile.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        MessageBox.Show("شماره نا معتبر است");
+                    }
                 }
                 else
                 {
@@ -133,6 +151,20 @@ namespace app_mobile_store
             catch (Exception ex)
             {
                 MessageBox.Show("رکورد قابل تغییر نیست");
+            }
+        }
+
+        private void txt_mobile_TextChanged(object sender, EventArgs e)
+        {
+            Validity check_num = new Validity();
+            isValid = check_num.isvalid_num(txt_mobile.Text);
+            if (isValid)
+            {
+                txt_mobile.BackColor = Color.Lime;
+            }
+            else
+            {
+                txt_mobile.BackColor = Color.IndianRed;
             }
         }
     }

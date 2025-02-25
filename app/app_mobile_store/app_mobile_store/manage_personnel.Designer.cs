@@ -84,6 +84,7 @@
             this.txt_mobile.Name = "txt_mobile";
             this.txt_mobile.Size = new System.Drawing.Size(273, 52);
             this.txt_mobile.TabIndex = 28;
+            this.txt_mobile.TextChanged += new System.EventHandler(this.txt_mobile_TextChanged);
             // 
             // txt_address
             // 

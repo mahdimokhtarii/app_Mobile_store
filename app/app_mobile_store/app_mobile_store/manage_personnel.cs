@@ -16,6 +16,7 @@ namespace app_mobile_store
         SqlConnection cnn;
         string connection;
         int old_id;
+        bool isValid;
         public manage_personnel()
         {
             connection = "server=.;database=DB_Mobile_Store;integrated security=true";
@@ -100,20 +101,28 @@ namespace app_mobile_store
             {
                 if (txt_acount_num.Text != string.Empty && txt_address.Text != string.Empty && txt_city.Text != string.Empty && txt_fname.Text != string.Empty && txt_lname.Text != string.Empty && txt_mobile.Text != string.Empty && txt_n_code.Text != string.Empty)
                 {
-                    string query = "update tbl_Personnel set Personnel_first_name=N'" + txt_fname.Text +
-                        "',personnel_last_name=N'" + txt_lname.Text +
-                        "',Personnel_national_code=N'" + txt_n_code.Text +
-                        "',Personnel_city=N'" + txt_city.Text +
-                        "',Personnel_address=N'" + txt_address.Text +
-                        "',Personnel_mobile=N'" + txt_mobile.Text +
-                        "',Personnel_account_number=N'" + txt_acount_num.Text +
-                        "' where Personnel_id=N'" + old_id.ToString() + "'";
-                    SqlCommand cmd = new SqlCommand(query, cnn);
-                    cmd.ExecuteNonQuery();
-                    update_grid();
-                    cmd.Dispose();
-                    MessageBox.Show("اطلاعات ویرایش شد");
-                    reset();
+                    if (isValid)
+                    {
+                        string query = "update tbl_Personnel set Personnel_first_name=N'" + txt_fname.Text +
+                            "',personnel_last_name=N'" + txt_lname.Text +
+                            "',Personnel_national_code=N'" + txt_n_code.Text +
+                            "',Personnel_city=N'" + txt_city.Text +
+                            "',Personnel_address=N'" + txt_address.Text +
+                            "',Personnel_mobile=N'" + txt_mobile.Text +
+                            "',Personnel_account_number=N'" + txt_acount_num.Text +
+                            "' where Personnel_id=N'" + old_id.ToString() + "'";
+                        SqlCommand cmd = new SqlCommand(query, cnn);
+                        cmd.ExecuteNonQuery();
+                        update_grid();
+                        cmd.Dispose();
+                        MessageBox.Show("اطلاعات ویرایش شد");
+                        reset();
+                        txt_mobile.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        MessageBox.Show("شماره نا معتبر است");
+                    }
                 }
                 else
                 {
@@ -124,6 +133,20 @@ namespace app_mobile_store
             catch (Exception ex)
             {
                 MessageBox.Show("اطلاعات ویرایش نشد");
+            }
+        }
+
+        private void txt_mobile_TextChanged(object sender, EventArgs e)
+        {
+            Validity check_num = new Validity();
+            isValid = check_num.isvalid_num(txt_mobile.Text);
+            if (isValid)
+            {
+                txt_mobile.BackColor = Color.Lime;
+            }
+            else
+            {
+                txt_mobile.BackColor = Color.IndianRed;
             }
         }
     }
